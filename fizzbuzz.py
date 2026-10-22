@@ -1,6 +1,9 @@
-   # Problem: 412. Fizz Buzz (Easy)
-   # Link: https://leetcode.com/problems/fizz-buzz/
-   # Approach: loop 1 to n; check "divisible by both" first, then 3, then 5
+# Problem: 412. Fizz Buzz (Easy)
+# Link: https://leetcode.com/problems/fizz-buzz/
+# Approach: loop 1 to n; check "divisible by both" first, then 3, then 5
+# Time: O(n)  Space: O(n)
+
+
 class Solution:
     def fizzBuzz(self, n: int) -> list[str]:
         answer = []
@@ -15,5 +18,6 @@ class Solution:
                 answer.append(str(i))
         return answer
 
-result = Solution().fizzBuzz(15)
-print(result)
+
+if __name__ == "__main__":
+    print(Solution().fizzBuzz(15))
